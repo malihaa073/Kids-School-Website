@@ -53,6 +53,9 @@ main{
     background-color: rgb(17, 17, 17);
 }
 /*navbar styles*/
+.top{
+    margin-bottom: 60px;
+}
 .navbar{
     justify-content: space-between;
     align-items: center;
@@ -89,7 +92,7 @@ line-height: 30px;
 letter-spacing: 0%;
 text-align: left;
 }
-
+/*Banner Section*/
 .banner{
     max-width: 1460px;
     margin: 0 auto;
@@ -113,7 +116,7 @@ text-align: left;
     text-align: left;
     width: 35rem;
     height: 11.4375rem;
-   
+    
 }
 .banner-p{
     width: 40rem;
@@ -127,36 +130,283 @@ text-align: left;
     letter-spacing: 0%;
     text-align: left;
 }
-.banner-img{
+
+/*standard-curriculam*/
+.standard-curriculam{
+    background: url('/assets/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    margin-top: 60px;
    
+    max-width: 1460px;
+    margin: 0 auto;
+    padding: 0 25px; 
+    padding-bottom: 80px;
+
+}
+.curriculam-title{
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 2.875rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.curriculam-cards{
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem; 
+    gap: 0.625rem;
+    padding: 0px 23px;
+    height: auto;
+  
+}
+.curriculam-card{
+    width: 22.99rem;
+    height: auto;
+    
+    box-sizing: border-box;
+    border-radius: 1.18rem;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 36px 28px 36px 28px;
+}
+.curriculam-img{
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+}
+.curriculam-head{
+    color: rgb(32, 32, 32);
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.9rem;
+    letter-spacing: 0%;
+    text-align: center;
 }
 
+.curriculam-p{
+    color: rgb(128, 128, 128);
+    font-family: Raleway;
+    font-size: 0.94rem;
+    font-weight: 500;
+    line-height: 1.76rem;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.c1{
+    border: 0.94px solid rgb(222, 245, 255);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.c2{
+    border: 0.94px solid rgb(255, 244, 220);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.c3{
+  
+    border: 0.94px solid rgb(242, 232, 255);
 
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
 
+#text1{
+    color: rgb(100, 200, 255);
+    font-family: Quicksand;
+    font-size: 0.94rem;
+    font-weight: 700;
+    line-height: 1.76rem;
+    letter-spacing: 0%;
+    text-align: center;
+}
+#text2{
+    color: rgb(240, 170, 0);
+    font-family: Quicksand;
+    font-size: 0.94rem;
+    font-weight: 700;
+    line-height: 1.76rem;
+    letter-spacing: 0%;
+    text-align: center;
+}
+#text3{
+    color: rgb(135, 0, 255);
+    font-family: Quicksand;
+    font-size: 0.94rem;
+    font-weight: 700;
+    line-height: 1.76rem;
+    letter-spacing: 0%;
+    text-align: center;
+}
 
+.arrow{
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3125rem;
+}
+.arrow-left{
+    border-radius: 30px;
+   color: white;
+    border: none;
+    background: rgb(254, 163, 1);
+    color: rgb(255, 255, 255);
+    font-family: Font Awesome 5 Free;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.arrow-right{
+    border-radius: 30px;
+    color: white;
+    border: none;
+    background: rgb(254, 163, 1);
+    color: rgb(255, 255, 255);
+    font-family: Font Awesome 5 Free;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+/*Storie container*/
+.stories{
+    background: url('/assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    max-width: 100%;
+    padding-bottom: 50px;
+}
+.storie-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    justify-content: center;
+    gap: 15px;
+    padding: 100px 110px;
+    margin: 0 auto;
+}
+.stori-1{
+    border-radius: 16px;
+    position: relative;
+    width: 36.767rem;
+    height: 39.41rem;
+    background: rgb(255, 255, 255);
+    align-items: center;
+}
+.stori-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
 
+    width: 100%;
+    width: 39.56rem;
+    height: 38.9rem;
+    align-items: center;
+    gap: 5px;
 
+}
 
+#s-pic1{
+    border-radius: 47.93px;
+    background: rgb(60, 216, 232);
+    margin-top: -20px;
+    margin-left: 30px;
+    padding: 14px 20px;
+}
+.s-pic2{
+    border-radius: 47.93px;
+    background: rgb(149, 178, 38);
+    margin-top: -20px;
+    margin-left: 30px;
+    padding: 14px 16px;
+}
+#s-pic3{
+    border-radius: 47.93px;
+    background: rgb(93, 88, 240);
+    margin-top: -20px;
+    margin-left: 30px;
+    padding: 14px 16px;
+}
+.stori-box-head{
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 402.49px;
+    height: 69.98px;
+    padding: 0 40px;
+    margin-top: 0px;
+    font: bold;
+}
 
-
-
-
-
-
-
-
-
+.grid-head{
+    padding-left: 0px;
+   
+    width: 12.37rem;
+    height: 2.99rem;
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 15.34px;
+    font-weight: 700;
+    line-height: 28.76px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 0 40px;
+    margin-top: 0px;
+    position: relative;
+    width: 198.04px;
+    height: 47.93px;
+}
+.story-box-p{
+    color: rgb(102, 102, 102);
+    font-family: Raleway;
+    font-size: 15.34px;
+    font-weight: 500;
+    line-height: 28.76px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 0 40px;
+    width: 26rem;
+    height: 4.73rem;
+}
+.grid-story2-box{
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    width: 19rem;
+    height: 18.85rem;
+}
+.stori{
+    border-radius: 16px 16px 0px 0px;
+    width: 100%;
+    background: rgb(217, 217, 217);
+}
+.centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding-bottom: 40px;
+}
+.grid-story2-box:nth-child(n+5) {
+    display: none; /* Hide extra images beyond the 6th one */
+}
 /*responsive media query*/
 @media screen and (max-width:576px) {
-    .nav-links {
+    .nav-links,
+    .arrow,
+    .brand,
+    .btn-primary,
+    .stori-1 {
         display: none;
     }
-    .brand{
-        display: none;
-    }
-    .btn-primary{
-        display: none;
-    }
+   
     .menu-btn {
         display: block; 
         border: none;
@@ -184,8 +434,11 @@ text-align: left;
         align-items: center;
         margin: 0 auto;
     }
+    .hero-pic{
+        align-items: center;
+    }
     .banner-img {
-        max-width: 100%; /* Optional: Adjusts image width for smaller screens */
+        max-width: 90%; /* Optional: Adjusts image width for smaller screens */
         margin: 0 auto; /*   border: 1px solid firebrick;*/
         margin-left: 0px;
        
@@ -232,7 +485,128 @@ text-align: left;
         text-align: center;
         border-radius: 8px;
         padding: 8px 15px;
-        margin-left: 40%;
+        margin-left: 35%;
       
+    }
+    .curriculam-cards{
+        flex-direction: column;
+        width: 90%;
+        margin-top: 20px;
+    }
+    .curriculam-card{
+        padding: 36px 28px 36px 28px;
+    }
+    .curriculam-title{
+        color: rgb(0, 0, 0);
+        font-family: Quicksand;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: 0%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .stories{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .storie-container{
+       position: relative;
+        width: 84%;
+        height:661.39px;
+        padding-top: 0px;
+        padding-left: 45px;
+        padding-right: 30px;
+        gap: 11.313209533691406;
+      
+        margin:0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .stori-2 {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-rows: repeat(3, 1fr); /* 3 rows */
+        gap: 10px;
+        width: 100%;
+        justify-content: center;     
+        height: 768.89px;
+    }
+
+    .grid-story2-box {
+        display: block; /* Ensure all items are visible */
+        border-radius: 9.53px;
+        background: rgb(255, 255, 255);
+        position: relative;
+        width: 10.81rem;
+        height: 11.22rem;
+    }
+
+    .grid-story2-box:nth-child(n+5) {
+        display: block; /* Hide extra images beyond the 6th one */
+    }
+    .grid-story2-box:nth-child(n+7) {
+        display: none; /* Hide extra images beyond the 6th one */
+    }
+    
+    .grid-head{
+        color: rgb(0, 0, 0);
+        font-family: Quicksand;
+        font-size: 0.571rem;
+        font-weight: 700;
+        line-height: 17.12px;
+        text-align: center;
+        padding: 0 0px;
+        height: 28.54px;
+        position: absolute;
+        width: 117.92px;
+        padding-left: 15px;
+        font: bold;
+    }
+  
+    .stori{
+        border-radius: 9.53px 9.53px 0px 0px;
+        width: 100%;
+        background: rgb(217, 217, 217);
+    }
+    .s-pic2{
+        position: relative; 
+        display: block;
+        border-radius: 24.54px;
+        background: rgb(149, 178, 38);
+        margin-top: -15px;
+        margin-left: 18px;
+        padding: 5.00px 10.42px 5.00px 10.42px;
+        font-family: Raleway;
+        font-size: 9.13px;
+        font-weight: 500;
+    }
+    #s-pic3{
+        position: relative;
+        display: block;
+        border-radius: 28.54px;
+        background: rgb(93, 88, 240);
+        margin-top: -15px;
+        margin-left: 18px;
+        padding: 5.00px 12.42px 5.00px 12.42px;
+        font-family: Raleway;
+        font-size: 9.13px;
+    }
+    .centering{
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        padding-bottom: 0px;
+      
+    }
+   
+    .black{
+        font-family: Quicksand;
+        display: inline-block; 
+        background-color: rgb(17, 17, 17);
+        gap: 10;
+        
+        font-size: 16px;
+       padding: 8px 45px;
     }
 }
