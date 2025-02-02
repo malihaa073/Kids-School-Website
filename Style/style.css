@@ -9,8 +9,7 @@
 main{
     margin: 0 auto;
 }
-.menu-btn ,
-.menu-line{
+.menu-btn {
     display: none; /* Default: hidden on big screens */
 }
 /*shared style*/
@@ -88,6 +87,9 @@ main{
 .img-icon{
     width: 62px;
     height: 62px;
+}
+.menu-line {
+    display: none;  /* Hide by default */
 }
 .brand{
 color: rgb(17, 17, 17);
@@ -317,23 +319,32 @@ linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3));
 #s-pic1{
     border-radius: 47.93px;
     background: rgb(60, 216, 232);
-    margin-top: -20px;
+    margin-top: -100px;
     margin-left: 30px;
     padding: 14px 20px;
+    position: relative; 
+    top: 2%;       /* Align the button vertically in the middle */
+    transform: translateY(-50%)
 }
 .s-pic2{
     border-radius: 47.93px;
     background: rgb(149, 178, 38);
-    margin-top: -20px;
+    margin-top: -55px;
     margin-left: 30px;
     padding: 14px 16px;
+    position: relative; 
+    top: 3%;       /* Align the button vertically in the middle */
+    transform: translateY(-50%)
 }
 #s-pic3{
     border-radius: 47.93px;
     background: rgb(93, 88, 240);
-    margin-top: -20px;
+    margin-top: -40px;
     margin-left: 30px;
     padding: 14px 16px;
+    position: relative; 
+    top: 3%;       /* Align the button vertically in the middle */
+    transform: translateY(-50%)
 }
 .stori-box-head{
     color: rgb(0, 0, 0);
@@ -347,6 +358,7 @@ linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3));
     height: 69.98px;
     padding: 0 40px;
     margin-top: 0px;
+    margin-bottom: 5px;
     font: bold;
 }
 
@@ -382,6 +394,7 @@ linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3));
     position: relative;
     width: 19rem;
     height: 18.85rem;
+    margin-bottom: 5px;
 }
 .stori{
     border-radius: 16px 16px 0px 0px;
@@ -496,8 +509,7 @@ linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3));
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
-        padding: 0 0;
-        
+        padding: 0 0;      
         width: 358px;
         height: 46px;
     }
@@ -508,9 +520,12 @@ linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3));
         padding-left: 0px;
     }
     .menu-line{
-        display: block; 
-        border: none;
+        display: inline; 
+        position: absolute;
+        width: 390px;
+        height: 70px;
         box-sizing: border-box;
+        color: rgb(254, 163, 1);
         border: 0.5px solid rgb(254, 163, 1);
     }
     .banner{
