@@ -522,8 +522,7 @@ linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3));
     .menu-line{
         display: inline; 
         position: absolute;
-        width: 390px;
-        height: 70px;
+       
         box-sizing: border-box;
         color: rgb(254, 163, 1);
         border: 0.5px solid rgb(254, 163, 1);
