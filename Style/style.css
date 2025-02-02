@@ -9,7 +9,8 @@
 main{
     margin: 0 auto;
 }
-.menu-btn {
+.menu-btn ,
+.menu-line{
     display: none; /* Default: hidden on big screens */
 }
 /*shared style*/
@@ -253,30 +254,27 @@ text-align: left;
     gap: 0.3125rem;
 }
 .arrow-left{
-    border-radius: 30px;
-   color: white;
+
+    background-image: url('../assets/Button\ -\ Previous\ slide.png');
+    background-size: cover;  /* Ensures the image covers the entire button */
+    background-position: center;
     border: none;
-    background: rgb(254, 163, 1);
-    color: rgb(255, 255, 255);
-    font-family: Font Awesome 5 Free;
-    font-size: 24px;
-    font-weight: 900;
-    line-height: 24px;
-    letter-spacing: 0%;
     text-align: center;
+    border-radius: 30px;
+    position: relative;
+    width: 60px;
+    height: 60px;
 }
 .arrow-right{
-    border-radius: 30px;
-    color: white;
+    background-image: url('../assets/Button\ -\ Next\ slide.png');
+    background-size: cover;  /* Ensures the image covers the entire button */
+    background-position: center;
     border: none;
-    background: rgb(254, 163, 1);
-    color: rgb(255, 255, 255);
-    font-family: Font Awesome 5 Free;
-    font-size: 24px;
-    font-weight: 900;
-    line-height: 24px;
-    letter-spacing: 0%;
     text-align: center;
+    border-radius: 30px;
+    position: relative;
+    width: 60px;
+    height: 60px;
 }
 /*Storie container*/
 .stories{
@@ -291,14 +289,14 @@ linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3));
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(1,1fr);
     justify-content: center;
-    gap: 15px;
+    gap: 19px;
     padding: 100px 110px;
     margin: 0 auto;
 }
 .stori-1{
     border-radius: 16px;
     position: relative;
-    width: 36.767rem;
+    width: 100%;
     height: 39.41rem;
     background: rgb(255, 255, 255);
     align-items: center;
@@ -353,8 +351,7 @@ linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3));
 }
 
 .grid-head{
-    padding-left: 0px;
-   
+    padding-left: 0px; 
     width: 12.37rem;
     height: 2.99rem;
     color: rgb(0, 0, 0);
@@ -362,13 +359,10 @@ linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3));
     font-size: 15.34px;
     font-weight: 700;
     line-height: 28.76px;
-    letter-spacing: 0%;
     text-align: left;
     padding: 0 40px;
     margin-top: 0px;
-    position: relative;
-    width: 198.04px;
-    height: 47.93px;
+    font:bold
 }
 .story-box-p{
     color: rgb(102, 102, 102);
@@ -509,14 +503,22 @@ linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3));
     }
     .img-icon{
         width: 52px;
-        height: 50px;
-        margin-left: -5px;
+        height: 45px;
+        margin-left: -1px;
+        padding-left: 0px;
+    }
+    .menu-line{
+        display: block; 
+        border: none;
+        box-sizing: border-box;
+        border: 0.5px solid rgb(254, 163, 1);
     }
     .banner{
         flex-direction: column-reverse;
         text-align: center;
         align-items: center;
         margin: 0 auto;
+        padding-top: 15px;
     }
     .hero-pic{
         align-items: center;
@@ -699,7 +701,7 @@ linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3));
         gap: 10;
         
         font-size: 16px;
-        padding: 0px 45px;
+        padding: 6px 24px 6px 24px;
     }
     .footer-sec{
         flex-direction: column;
@@ -708,8 +710,8 @@ linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3));
         margin-left: 170px;
        
     }
-    .img-icon{
-        width: 62px;
+    .icon-footer {
+         width: 62px;
         height: 70px;
     }
     .footer-left{
